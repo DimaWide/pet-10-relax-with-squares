@@ -1,0 +1,61 @@
+
+
+
+.cmp-button {
+    font-family: "Open Sans", serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+
+    background: #d8b800;
+    padding: 5px 16px;
+    min-height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all 0.25s ease;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #474748;
+    }
+
+    &.mod-white {
+        background: #fff;
+        color: #222;
+    }
+
+    &.mod-border {
+        border: 1px solid #fff;
+        color: #fff;
+        background-color: transparent;
+
+        &:hover {
+            border-color: #fff;
+            color: #3574ff;
+            background-color: #fff;
+        }
+    }
+
+    &.mod-btn {
+        &:not(:disabled) {
+            cursor: pointer;
+
+            &:hover {
+                background-color: #fff;
+                background-color: transparent;
+                border-color: #222;
+                color: #222;
+            }
+        }
+    }
+
+    &:disabled {
+        // opacity: 0.8;
+    }
+}
+

@@ -1,0 +1,31 @@
+.pyramid-container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 200px;
+    left: 0;
+    margin: 0 auto;
+
+    &-out {
+        position: relative;
+
+        .controls {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            width: 350px;
+
+            label {
+                min-width: 140px;
+                display: inline-block;
+            }
+
+            input {
+                filter: grayscale(1);
+            }
+        }
+    }
+}
