@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Pyramid.scss';
 
 const Pyramid = () => {
-    const [speedFactor, setSpeedFactor] = useState(1);
+    const [speedFactor, setSpeedFactor] = useState(2.5);
     const [baseColor, setBaseColor] = useState(200);
-    const [contrast, setContrast] = useState(10);
+    const [contrast, setContrast] = useState(7);
     const [smoothness, setSmoothness] = useState(0.5);
     const [shadowSize, setShadowSize] = useState(10);
     const [shadowOpacity, setShadowOpacity] = useState(0.5);
@@ -79,8 +79,8 @@ const Pyramid = () => {
 
                 {/* Анимация */}
                 {squares.map((square, index) => {
-                    const offsetX = Math.cos((angleRef.current + index * 36) * (Math.PI / 180)) * 150;
-                    const offsetY = Math.sin((angleRef.current + index * 36) * (Math.PI / 180)) * 150;
+                    const offsetX = Math.cos((angleRef.current + index * 36) * (Math.PI / 180)) * 70;
+                    const offsetY = Math.sin((angleRef.current + index * 36) * (Math.PI / 180)) * 70;
 
                     return (
                         <div
