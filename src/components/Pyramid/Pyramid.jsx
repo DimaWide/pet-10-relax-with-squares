@@ -6,8 +6,8 @@ const Pyramid = () => {
     const [baseColor, setBaseColor] = useState(200);
     const [contrast, setContrast] = useState(10);
     const [smoothness, setSmoothness] = useState(0.5);
-    const [shadowSize, setShadowSize] = useState(10); 
-    const [shadowOpacity, setShadowOpacity] = useState(0.5); 
+    const [shadowSize, setShadowSize] = useState(10);
+    const [shadowOpacity, setShadowOpacity] = useState(0.5);
 
     const angleRef = useRef(0);
 
